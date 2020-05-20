@@ -1,0 +1,9 @@
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Entities/bin/Debug/netcoreapp3.1/StreetJams.Entities.deps.json
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Entities/bin/Debug/netcoreapp3.1/StreetJams.Entities.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Entities/bin/Debug/netcoreapp3.1/StreetJams.Entities.pdb
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Entities/obj/Debug/netcoreapp3.1/StreetJams.Entities.csprojAssemblyReference.cache
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Entities/obj/Debug/netcoreapp3.1/StreetJams.Entities.csproj.CoreCompileInputs.cache
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Entities/obj/Debug/netcoreapp3.1/StreetJams.Entities.AssemblyInfoInputs.cache
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Entities/obj/Debug/netcoreapp3.1/StreetJams.Entities.AssemblyInfo.cs
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Entities/obj/Debug/netcoreapp3.1/StreetJams.Entities.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Entities/obj/Debug/netcoreapp3.1/StreetJams.Entities.pdb

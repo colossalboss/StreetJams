@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{60B8234F-5D4D-4C61-A44C-137FEF765A74}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StreetJams.Data/Migrations/20200520191338_InitialMigration.cs">
+    <Files>
+      <File FileName="StreetJams.Data/AppDbContext.cs" Line="9" Column="69" />
+      <File FileName="StreetJams.Entities/Song.cs" Line="13" Column="28" />
+      <File FileName="StreetJamsAPI/appsettings.json" Line="3" Column="12" />
+      <File FileName="StreetJamsAPI/Startup.cs" Line="29" Column="10" />
+      <File FileName="StreetJams.Data/Migrations/20200520191338_InitialMigration.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="StreetJams" expanded="True">
+            <Node name="StreetJams.Data" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Migrations" expanded="True">
+                <Node name="20200520191338_InitialMigration.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="StreetJams.Entities" expanded="True" />
+            <Node name="StreetJamsAPI" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.StreetJamsAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

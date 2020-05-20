@@ -1,0 +1,15 @@
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/bin/Debug/netcoreapp3.1/StreetJams.Data.deps.json
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/bin/Debug/netcoreapp3.1/StreetJams.Data.runtimeconfig.json
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/bin/Debug/netcoreapp3.1/StreetJams.Data.runtimeconfig.dev.json
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/bin/Debug/netcoreapp3.1/StreetJams.Data.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/bin/Debug/netcoreapp3.1/StreetJams.Data.pdb
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/bin/Debug/netcoreapp3.1/StreetJams.Entities.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/bin/Debug/netcoreapp3.1/StreetJams.Entities.pdb
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/obj/Debug/netcoreapp3.1/StreetJams.Data.csprojAssemblyReference.cache
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/obj/Debug/netcoreapp3.1/StreetJams.Data.csproj.CoreCompileInputs.cache
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/obj/Debug/netcoreapp3.1/StreetJams.Data.AssemblyInfoInputs.cache
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/obj/Debug/netcoreapp3.1/StreetJams.Data.AssemblyInfo.cs
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/obj/Debug/netcoreapp3.1/StreetJams.Data.csproj.CopyComplete
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/obj/Debug/netcoreapp3.1/StreetJams.Data.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/obj/Debug/netcoreapp3.1/StreetJams.Data.pdb
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Data/obj/Debug/netcoreapp3.1/StreetJams.Data.genruntimeconfig.cache
