@@ -9,8 +9,14 @@ namespace StreetJams.Entities
     {
         public Guid Id { get; set; }
 
-        [Display(Name = "Song Name")]
-        [NotMappedAttribute]
-        public IFormFile SongName { get; set; }
+        public string SongUrl { get; set; }
+
+        public string Artist { get; set; }
+
+        public string Genre { get; set; }
+
+        public DateTime TimeStamp { get; set; }
+
+        public SongStatus Status { get; set; }
     }
 }

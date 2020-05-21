@@ -47,3 +47,6 @@
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/obj/Debug/netcoreapp3.1/StreetJamsAPI.pdb
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/obj/Debug/netcoreapp3.1/StreetJamsAPI.genruntimeconfig.cache
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/AutoMapper.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Humanizer.dll

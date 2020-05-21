@@ -7,3 +7,8 @@
 /Users/ogbaragodwin/Projects/StreetJams/StreetJams.Services/obj/Debug/netcoreapp3.1/StreetJams.Services.AssemblyInfo.cs
 /Users/ogbaragodwin/Projects/StreetJams/StreetJams.Services/obj/Debug/netcoreapp3.1/StreetJams.Services.dll
 /Users/ogbaragodwin/Projects/StreetJams/StreetJams.Services/obj/Debug/netcoreapp3.1/StreetJams.Services.pdb
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Services/bin/Debug/netcoreapp3.1/StreetJams.Data.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Services/bin/Debug/netcoreapp3.1/StreetJams.Entities.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Services/bin/Debug/netcoreapp3.1/StreetJams.Entities.pdb
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Services/bin/Debug/netcoreapp3.1/StreetJams.Data.pdb
+/Users/ogbaragodwin/Projects/StreetJams/StreetJams.Services/obj/Debug/netcoreapp3.1/StreetJams.Services.csproj.CopyComplete
