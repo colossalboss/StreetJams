@@ -111,6 +111,9 @@ namespace StreetJamsAPI
                 o.MemoryBufferThreshold = int.MaxValue;
             });
             services.AddAutoMapper(typeof(Startup));
+
+            IFileProvider fileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory());
+            services.AddSingleton<IFileProvider>(fileProvider);
         }
 
         private static void UpdateDatabase(IApplicationBuilder app)
