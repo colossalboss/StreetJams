@@ -130,7 +130,7 @@ namespace StreetJamsAPI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IFileProvider fileProvider)
         {
             UpdateDatabase(app);
 
@@ -149,10 +149,16 @@ namespace StreetJamsAPI
             app.UseFileServer(new FileServerOptions
             {
                 FileProvider = new PhysicalFileProvider(
-                    Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+                    Path.Combine(Directory.GetCurrentDirectory(), @"Resources"), Microsoft.Extensions.FileProviders.Physical.ExclusionFilters.None),
                 RequestPath = "/Resources",
                 //EnableDirectoryBrowsing = true
             });
+
+            //app.UseStaticFiles(new StaticFileOptions()
+            //{
+            //    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+            //    RequestPath = new PathString("/Resources")
+            //});
 
             //app.UseStaticFiles(new StaticFileOptions()
             //{
