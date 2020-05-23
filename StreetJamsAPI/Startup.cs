@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
+using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -110,7 +111,6 @@ namespace StreetJamsAPI
                 o.MemoryBufferThreshold = int.MaxValue;
             });
             services.AddAutoMapper(typeof(Startup));
-
         }
 
         private static void UpdateDatabase(IApplicationBuilder app)
@@ -141,11 +141,21 @@ namespace StreetJamsAPI
 
             app.UseHttpsRedirection();
 
-            app.UseStaticFiles(new StaticFileOptions()
+            app.UseStaticFiles(); // For the wwwroot folder
+
+            app.UseFileServer(new FileServerOptions
             {
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
-                RequestPath = new PathString("/Resources")
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+                RequestPath = "/Resources",
+                //EnableDirectoryBrowsing = true
             });
+
+            //app.UseStaticFiles(new StaticFileOptions()
+            //{
+            //    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+            //    RequestPath = new PathString("/Resources")
+            //});
 
             app.UseRouting();
 

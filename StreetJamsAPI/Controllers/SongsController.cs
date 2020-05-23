@@ -33,12 +33,12 @@ namespace StreetJamsAPI.Controllers
         // GET: api/values
         
         [HttpGet]
-        [Authorize]
+        //[Authorize]
         public IActionResult Get()
         {
             var songs = _songsRepo.GetSongs();
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var user = HttpContext.User.Claims.First().Value;
+            //var user = HttpContext.User.Claims.First().Value;
 
 
             return Ok(songs);
@@ -86,7 +86,7 @@ namespace StreetJamsAPI.Controllers
                     upload.UserId = Guid.Parse(userId);
                     upload.TimeStamp = DateTime.Now;
                     upload.Status = SongStatus.Pending;
-                    upload.SongUrl = $"https://localhost:5001/{dbPath}";
+                    upload.SongUrl = $"https://www.localhost:5001/{dbPath}";
                     _songsRepo.PostSong(upload);
 
                     return Ok(new { dbPath });
