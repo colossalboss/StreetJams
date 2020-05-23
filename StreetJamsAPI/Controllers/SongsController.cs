@@ -86,7 +86,7 @@ namespace StreetJamsAPI.Controllers
                     upload.UserId = Guid.Parse(userId);
                     upload.TimeStamp = DateTime.Now;
                     upload.Status = SongStatus.Pending;
-                    upload.SongUrl = $"https://www.localhost:5001/{dbPath}";
+                    upload.SongUrl = $"https://localhost:5001/{dbPath}";
                     _songsRepo.PostSong(upload);
 
                     return Ok(new { dbPath });
