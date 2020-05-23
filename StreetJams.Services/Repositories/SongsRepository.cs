@@ -16,6 +16,14 @@ namespace StreetJams.Services.Repositories
             _db = db;
         }
 
+        public Song DeleteSong(Guid id)
+        {
+            var song = _db.Songs.FirstOrDefault(s => s.Id == id);
+            _db.Remove(song);
+            _db.SaveChanges();
+            return song;
+        }
+
         public Song GetSongById(Guid id)
         {
             var song = _db.Songs.FirstOrDefault(s => s.Id == id);
@@ -25,6 +33,11 @@ namespace StreetJams.Services.Repositories
         public List<Song> GetSongs()
         {
             return _db.Songs.ToList();
+        }
+
+        public List<Song> GetUserSongs(Guid id)
+        {
+            return _db.Songs.Where(s => s.UserId == id).ToList();
         }
 
         public Song PostSong(Song song)

@@ -11,6 +11,10 @@ namespace StreetJams.Services.Interfaces
 
         Song GetSongById(Guid id);
 
+        List<Song> GetUserSongs(Guid id);
+
         Song PostSong(Song song);
+
+        Song DeleteSong(Guid id);
     }
 }

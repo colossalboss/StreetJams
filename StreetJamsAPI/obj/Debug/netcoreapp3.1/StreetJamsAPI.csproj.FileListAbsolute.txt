@@ -50,3 +50,16 @@
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/AutoMapper.dll
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Humanizer.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll

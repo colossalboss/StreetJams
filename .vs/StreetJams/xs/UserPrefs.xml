@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{60B8234F-5D4D-4C61-A44C-137FEF765A74}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="StreetJams.Entities/Song.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="StreetJamsAPI/Controllers/UsersController.cs">
     <Files>
-      <File FileName="StreetJams.Entities/Song.cs" Line="20" Column="47" />
-      <File FileName="StreetJams.Services/Interfaces/ISongs.cs" Line="10" Column="29" />
-      <File FileName="StreetJamsAPI/ViewModels/SongDto.cs" Line="16" Column="41" />
-      <File FileName="StreetJamsAPI/Controllers/SongsController.cs" Line="68" Column="35" />
-      <File FileName="StreetJamsAPI/Program.cs" Line="16" Column="1" />
-      <File FileName="StreetJams.Services/Repositories/SongsRepository.cs" Line="19" Column="36" />
-      <File FileName="StreetJamsAPI/Helpers/MappingProfile.cs" Line="13" Column="48" />
-      <File FileName="StreetJams.Entities/SongStatus.cs" Line="8" Column="16" />
+      <File FileName="StreetJamsAPI/Startup.cs" Line="51" Column="1" />
+      <File FileName="StreetJamsAPI/Controllers/AccountController.cs" Line="77" Column="1" />
+      <File FileName="StreetJamsAPI/Controllers/SongsController.cs" Line="57" Column="1" />
+      <File FileName="StreetJams.Entities/Song.cs" Line="22" Column="48" />
+      <File FileName="StreetJams.Services/Interfaces/ISongs.cs" Line="14" Column="32" />
+      <File FileName="StreetJams.Services/Repositories/SongsRepository.cs" Line="38" Column="39" />
+      <File FileName="StreetJamsAPI/ViewModels/SongDto.cs" Line="31" Column="1" />
+      <File FileName="StreetJamsAPI/Controllers/ProfileController.cs" Line="1" Column="1" />
+      <File FileName="StreetJamsAPI/Controllers/UsersController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,20 +18,18 @@
             <Node name="StreetJams.Data" expanded="True">
               <Node name="Migrations" expanded="True" />
             </Node>
-            <Node name="StreetJams.Entities" expanded="True">
-              <Node name="Song.cs" selected="True" />
-            </Node>
+            <Node name="StreetJams.Entities" expanded="True" />
             <Node name="StreetJams.Services" expanded="True">
               <Node name="Interfaces" expanded="True" />
               <Node name="Repositories" expanded="True" />
             </Node>
             <Node name="StreetJamsAPI" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="UsersController.cs" selected="True" />
               </Node>
-              <Node name="Controllers" expanded="True" />
-              <Node name="Helpers" expanded="True" />
-              <Node name="Resources" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="Songs" expanded="True" />
+              </Node>
               <Node name="ViewModels" expanded="True" />
             </Node>
           </Node>
@@ -42,10 +41,7 @@
   <MonoDevelop.Ide.ItemProperties.StreetJamsAPI PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/Controllers/SongsController.cs" relfile="StreetJamsAPI/Controllers/SongsController.cs" line="74" column="1" />
-      <Breakpoint file="/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/Controllers/SongsController.cs" relfile="StreetJamsAPI/Controllers/SongsController.cs" line="69" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

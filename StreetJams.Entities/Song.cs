@@ -13,7 +13,13 @@ namespace StreetJams.Entities
 
         public string Artist { get; set; }
 
+        public string SongTitle { get; set; }
+
+        public Guid UserId { get; set; }
+
         public string Genre { get; set; }
+
+        public string ReleaseDate { get; set; }
 
         public DateTime TimeStamp { get; set; }
 
