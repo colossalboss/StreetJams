@@ -49,7 +49,6 @@
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/AutoMapper.dll
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
-/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Humanizer.dll
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
