@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -130,7 +131,7 @@ namespace StreetJamsAPI
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IFileProvider fileProvider)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             UpdateDatabase(app);
 
