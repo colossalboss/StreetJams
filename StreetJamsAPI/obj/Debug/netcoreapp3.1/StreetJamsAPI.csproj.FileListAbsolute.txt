@@ -62,3 +62,6 @@
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
 /Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Abstractions.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileProviders.Physical.dll
+/Users/ogbaragodwin/Projects/StreetJams/StreetJamsAPI/bin/Debug/netcoreapp3.1/Microsoft.Extensions.FileSystemGlobbing.dll

@@ -37,7 +37,6 @@ namespace StreetJamsAPI.Controllers
         {
             var songs = _songsRepo.GetSongs();
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            //var user = HttpContext.User.Claims.First().Value;
 
 
             return Ok(songs);

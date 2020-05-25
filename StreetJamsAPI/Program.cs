@@ -21,8 +21,7 @@ namespace StreetJamsAPI
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseContentRoot(Directory.GetCurrentDirectory()).UseIISIntegration()
-.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>();
                 });
     }
 }
