@@ -145,15 +145,15 @@ namespace StreetJamsAPI
 
             app.UseHttpsRedirection();
 
-            app.UseStaticFiles(); // For the wwwroot folder
+            app.UseStaticFiles();
 
-            app.UseFileServer(new FileServerOptions
-            {
-                FileProvider = new PhysicalFileProvider(
-                    Path.Combine(Directory.GetCurrentDirectory(), @"Resources"), Microsoft.Extensions.FileProviders.Physical.ExclusionFilters.None),
-                RequestPath = "/Resources",
-                //EnableDirectoryBrowsing = true
-            });
+            //app.UseFileServer(new FileServerOptions
+            //{
+            //    FileProvider = new PhysicalFileProvider(
+            //        Path.Combine(Directory.GetCurrentDirectory(), @"Resources"), Microsoft.Extensions.FileProviders.Physical.ExclusionFilters.None),
+            //    RequestPath = "/Resources",
+            //    //EnableDirectoryBrowsing = true
+            //});
 
             //app.UseStaticFiles(new StaticFileOptions()
             //{
