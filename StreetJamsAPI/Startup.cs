@@ -152,7 +152,7 @@ namespace StreetJamsAPI
 
             app.UseHttpsRedirection();
 
-            app.UseStaticFiles();
+            //app.UseStaticFiles();
 
             //app.UseFileServer(new FileServerOptions
             //{
@@ -168,11 +168,11 @@ namespace StreetJamsAPI
             //    RequestPath = new PathString("/Resources")
             //});
 
-            //app.UseStaticFiles(new StaticFileOptions()
-            //{
-            //    FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
-            //    RequestPath = new PathString("/Resources")
-            //});
+            app.UseStaticFiles(new StaticFileOptions()
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+                RequestPath = new PathString("/Resources")
+            });
 
             app.UseRouting();
             app.UseCors("MyPolicy");
