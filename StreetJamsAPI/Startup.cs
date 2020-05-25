@@ -113,8 +113,8 @@ namespace StreetJamsAPI
             });
             services.AddAutoMapper(typeof(Startup));
 
-            IFileProvider fileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory(), Microsoft.Extensions.FileProviders.Physical.ExclusionFilters.None);
-            services.AddSingleton<IFileProvider>(fileProvider);
+            //IFileProvider fileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory(), Microsoft.Extensions.FileProviders.Physical.ExclusionFilters.None);
+            //services.AddSingleton<IFileProvider>(fileProvider);
         }
 
         private static void UpdateDatabase(IApplicationBuilder app)
