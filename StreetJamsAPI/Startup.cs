@@ -113,6 +113,13 @@ namespace StreetJamsAPI
             });
             services.AddAutoMapper(typeof(Startup));
 
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader();
+            }));
+
             //IFileProvider fileProvider = new PhysicalFileProvider(Directory.GetCurrentDirectory(), Microsoft.Extensions.FileProviders.Physical.ExclusionFilters.None);
             //services.AddSingleton<IFileProvider>(fileProvider);
         }
@@ -168,6 +175,8 @@ namespace StreetJamsAPI
             //});
 
             app.UseRouting();
+            app.UseCors("MyPolicy");
+
 
             app.UseAuthorization();
 
