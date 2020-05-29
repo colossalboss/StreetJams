@@ -37,7 +37,6 @@ namespace StreetJamsAPI.Controllers
         {
             var songs = _songsRepo.GetSongs();
             var songsViewModel = _mapper.Map<List<SongViewModel>>(songs);
-
             return Ok(songsViewModel);
         }
 

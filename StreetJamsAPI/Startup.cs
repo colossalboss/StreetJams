@@ -164,7 +164,7 @@ namespace StreetJamsAPI
 
             app.UseStaticFiles(new StaticFileOptions()
             {
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory().ToString())),
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory())),
                 RequestPath = new PathString("")
             });
 
