@@ -12,6 +12,10 @@ namespace StreetJamsAPI.Helpers
             CreateMap<SongDto, Song>()
                 .ForMember(dest => dest.SongUrl,
                     act => act.MapFrom(src => $"https://localhost:5001/{src.Title.FileName}"));
+
+            CreateMap<Song, SongViewModel>()
+                .ForMember(dest => dest.SongUrl,
+                    act => act.MapFrom(src => $"https://street-jams-001.herokuapp.com/{src.SongTitle}"));
         }
     }
 }

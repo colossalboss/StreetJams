@@ -36,10 +36,9 @@ namespace StreetJamsAPI.Controllers
         public IActionResult Get()
         {
             var songs = _songsRepo.GetSongs();
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var songsViewModel = _mapper.Map<List<SongViewModel>>(songs);
 
-
-            return Ok(songs);
+            return Ok(songsViewModel);
         }
 
         // GET api/values/5
@@ -64,14 +63,14 @@ namespace StreetJamsAPI.Controllers
             try
             {
                 var file = Request.Form.Files[0];
-                var folderName = Path.Combine("Resources", "Songs");
-                var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+                //var folderName = Path.Combine("Resources", "Songs");
+                var pathToSave = Path.Combine(Directory.GetCurrentDirectory());
 
                 if (file.Length > 0)
                 {
                     var fileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
                     var fullPath = Path.Combine(pathToSave, fileName);
-                    var dbPath = Path.Combine(folderName, fileName);
+                    var dbPath = Path.Combine(fileName);
 
                     using (var stream = new FileStream(fullPath, FileMode.Create))
                     {
@@ -84,7 +83,7 @@ namespace StreetJamsAPI.Controllers
                     upload.UserId = Guid.Parse(userId);
                     upload.TimeStamp = DateTime.Now;
                     upload.Status = SongStatus.Pending;
-                    upload.SongUrl = $"https://localhost:5001/{dbPath}";
+                    upload.SongUrl = dbPath;
                     _songsRepo.PostSong(upload);
 
                     return Ok(new { dbPath });
@@ -121,11 +120,11 @@ namespace StreetJamsAPI.Controllers
                      var deletedSong = _songsRepo.DeleteSong(song.Id);
                     if (deletedSong != null)
                     {
-                        var folderName = Path.Combine("Resources", "Songs");
-                        var pathToSave = Path.Combine(Directory.GetCurrentDirectory(), folderName);
+                        //var folderName = Path.Combine("Resources", "Songs");
+                        var pathToSave = Path.Combine(Directory.GetCurrentDirectory());
 
                         var fullPath = Path.Combine(pathToSave, fileName);
-                        var dbPath = Path.Combine(folderName, fileName);
+                        //var dbPath = Path.Combine(fileName);
 
                         var file = new FileInfo(fullPath);
 
@@ -135,6 +134,7 @@ namespace StreetJamsAPI.Controllers
 
             }
         }
+
 
     }
 }
