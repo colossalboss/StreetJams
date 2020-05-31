@@ -54,7 +54,7 @@ namespace StreetJamsAPI.Controllers
             return Ok(_songsRepo.GetUserSongs(id));
         }
 
-        //[Authorize]
+        [Authorize]
         //[HttpPost]
         [HttpPost, DisableRequestSizeLimit]
         public IActionResult Post([FromForm] SongDto song)
