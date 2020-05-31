@@ -55,7 +55,6 @@ namespace StreetJamsAPI.Controllers
         }
 
         [Authorize]
-        //[HttpPost]
         [HttpPost, DisableRequestSizeLimit]
         public IActionResult Post([FromForm] SongDto song)
         {

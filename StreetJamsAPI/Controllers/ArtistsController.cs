@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -65,6 +66,12 @@ namespace StreetJamsAPI.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
+            var song = _songsRepo.GetSongById(Guid.Parse("3f89f23e-36c7-4bb6-8367-3b4db9c85867"));
+
+            var path = Directory.GetCurrentDirectory();
+
+            var musicFile = new FileInfo(Path.Combine(path, song.SongUrl));
+
             return "value";
         }
 

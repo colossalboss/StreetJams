@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using StreetJams.Data;
 using StreetJams.Entities;
@@ -32,7 +33,9 @@ namespace StreetJams.Services.Repositories
 
         public List<Song> GetSongs()
         {
-            return _db.Songs.ToList();
+            var songs = RemoveNotExistingSongs();
+
+            return songs;
         }
 
         public List<Song> GetUserSongs(Guid id)
@@ -45,6 +48,54 @@ namespace StreetJams.Services.Repositories
             _db.Songs.Add(song);
             _db.SaveChanges();
             return song;
+        }
+
+        private bool CheckIfSongExistInDirectory(Guid id)
+        {
+            var song = GetSongById(id);
+
+            var path = Directory.GetCurrentDirectory();
+
+            var musicFile = new FileInfo(Path.Combine(path, song.SongUrl));
+
+            if (musicFile.Exists)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        private List<Song> RemoveNotExistingSongs()
+        {
+            var songs = _db.Songs.ToList();
+
+            var existing = new List<Song>();
+            var missing = new List<Song>();
+
+            foreach (var song in songs)
+            {
+                if (CheckIfSongExistInDirectory(song.Id))
+                {
+                    existing.Add(song);
+                }
+                else
+                {
+                    missing.Add(song);
+                }
+            }
+
+            DeleteMissingSongsFromDb(missing);
+
+            return existing;
+        }
+
+        private void DeleteMissingSongsFromDb(List<Song> songs)
+        {
+            if (songs.Any())
+            {
+                _db.Songs.RemoveRange(songs);
+                _db.SaveChanges();
+            }
         }
     }
 }
